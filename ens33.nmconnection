@@ -1,0 +1,22 @@
+# use system default connection config
+#[connection]
+#id=ens33
+#uuid=nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn
+#type=ethernet
+#interface-name=ens33
+
+[ethernet]
+#mac-address=00:00:00:00:00:00
+[ipv4]
+may-fail=true
+method=manual
+address1=192.168.10.23/24
+
+[ipv6]
+addr-gen-mode=eui64
+may-fail=true
+method=auto
+#address1=2001::1/63 #method=auto with fixed range
+
+[proxy]
+
